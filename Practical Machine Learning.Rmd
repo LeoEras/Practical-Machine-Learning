@@ -26,8 +26,8 @@ library(e1071)
 training<-read.csv(url("http://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv"))
 testing<-read.csv(url("http://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv"))
 
-head(testing)
-head(training)
+dim(testing)
+dim(training)
 ```
 We can build a training and validation sets from the training variable. We'll also set our seed here before proceeding.
 ```{r}
